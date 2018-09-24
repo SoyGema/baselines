@@ -10,7 +10,7 @@ def callback(lcl, _glb):
 
 
 def main():
-    env = gym.make("CartPole-v0")
+    env = gym.make("Taxi-v2")
     act = deepq.learn(
         env,
         network='mlp',

@@ -25,7 +25,7 @@ def model(inpt, num_actions, scope, reuse=False):
 if __name__ == '__main__':
     with U.make_session(8):
         # Create the environment
-        env = gym.make("CartPole-v0")
+        env = gym.make("Taxi-v2")
         # Create all the functions necessary to train the model
         act, train, update_target, debug = deepq.build_train(
             make_obs_ph=lambda name: ObservationInput(env.observation_space, name=name),

@@ -4,7 +4,7 @@ from baselines import deepq
 
 
 def main():
-    env = gym.make("CartPole-v0")
+    env = gym.make("Taxi-v2")
     act = deepq.learn(env, network='mlp', total_timesteps=0, load_path="cartpole_model.pkl")
 
     while True:
